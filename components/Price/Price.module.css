@@ -205,3 +205,10 @@
     background-color: var(--color);
     color: white;
 }
+.hit{
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    height: 3vw;
+    width: auto;
+}

@@ -3,6 +3,7 @@ import { useRef, useState } from 'react'
 import css from './Price.module.css'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
+import Image from 'next/image'
 
 
 const Price = () => {
@@ -108,7 +109,7 @@ const Price = () => {
 
     const [type, setType] = useState(false)
     return (
-        <div className={css.container}>
+        <div className={css.container} id='price'>
             <h2 className={css.header}>Цены на комплексные ремонты</h2>
             <h3 className={css.header1}>Ремонтируем квартиры «под ключ» и отдельные помещения</h3>
             <div className={css.buttonContainer}>
@@ -130,7 +131,8 @@ const TypeHandler = ({ map, type }) => {
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className={css.cardContainer}>
                 {
                     map.map(e => (
-                        <div className={css.card}>
+                        <div className={css.card} key={e.name}>
+                            {e.name == 'Капитальный'&&<Image src={'img/hit.svg'} unoptimized width={20} height={100} sizes='100' className={css.hit}/>}
                             <h2 className={css.cardName}>{e.name}</h2>
                             <div className={css.descriptionContainer}>
                                 <span className={css.faq}>?</span>
@@ -162,6 +164,7 @@ const TypeHandler = ({ map, type }) => {
                 {
                     map.map(e => (
                         <div className={css.card}>
+                            {e.name == 'Капитальный'&&<Image src={'img/hit.svg'} unoptimized width={20} height={100} sizes='100' className={css.hit}/>}
                             <h2 className={css.cardName}>{e.name}</h2>
                             <div className={css.descriptionContainer}>
                                 <span className={css.faq}>?</span>
