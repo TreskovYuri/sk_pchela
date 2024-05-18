@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 9vh;
+    display: flex;
+    padding: 0 15vw;
+}
+.heroBackground{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    user-select: none;
+}
+.textContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 7vh 0;
+}
+.mapIcon{
+    z-index: 1;
+    width: 1vw;
+    height: auto;
+}
+.city{
+    color: var(--color);
+    z-index: 1;
+    font-size: 1vw;
+}
+.header{
+    color: black;
+    z-index: 1;
+    font-size: 1.9vw;
+    width: 20vw;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+
+.formContainer{
+    width: 50%;
+}
