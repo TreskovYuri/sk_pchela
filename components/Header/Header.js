@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <motion.section transition={{ duration: .3, ease: 'easeOut', delay: 3 }} className={css.container}>
       <div className={css.logoContainer}>
-        <Image src='img/logo.png' className={css.logo} unoptimized width={50} height={50} sizes='100' />
+        <Image src='img/logo.png' className={css.logo} unoptimized width={50} height={50} sizes='100' alt='Логотип компании'/>
         <div className={css.textContainer}>
           <span className={css.text1}>Пчела</span>
           <span className={css.text2}>Строительная компания</span>
@@ -37,8 +37,8 @@ const Header = () => {
         <div className={css.buttonIconsContainer}>
           <div className={css.button}>Заказать звонок</div>
           <div className={css.iconsBlock}>
-            <Image src='img/vk_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' />
-            <Image src='img/tg_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' />
+            <Image src='img/vk_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' alt='Иконка социальной сети'/>
+            <Image src='img/tg_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' alt='Иконка социальной сети'/>
           </div>
         </div>
 

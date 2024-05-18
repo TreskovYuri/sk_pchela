@@ -1,0 +1,207 @@
+.container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 20vw;
+    align-items: center;
+}
+.header{
+    color: var(--black);
+    z-index: 1;
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+.header1{
+    color: var(--black);
+    z-index: 1;
+    font-size: .8vw;
+    font-weight: 300;
+}
+.buttonContainer{
+    display: flex;
+    gap: 1vw;
+    height: 2vw;
+    margin-top: 2vw;
+}
+.button{
+    height: 100%;
+    width: 7vw;
+    background-color: var(--color-enable);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-size: .7vw;
+    font-weight: 600;
+    border-radius: .2vw;
+    cursor: pointer;
+    transition: all .3s;
+}
+.button:hover{
+    background-color: var(--color);
+    color: white;
+}
+.avtiveButton{
+    background-color: var(--color);
+    color: white;
+}
+.avtiveButton:hover{
+    background-color: var(--color-hover);
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    width: 15vw;
+    height: auto;
+    padding: 3vw 0vw 3.5vw 0;
+    min-height: 70vh;
+    position: relative;
+}
+.cardName{
+    font-size: 1vw;
+    font-weight: 600;
+    color: var(--black);
+}
+.descriptionContainer{
+    display: flex;
+    gap: .5vw;
+    background-color: #F5F5F5;
+    border-radius: .5vw;
+    padding: .7vw;
+    margin: 1vw .5vw;
+
+}
+.faq{
+    height: 1vw;
+    width: 1vw;
+    font-size: .7vw;
+    background-color: var(--color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100vw;
+    
+}
+.description{
+    width: 90%;
+    height: 1.7vw;
+    font-size: .5vw;
+    color: var(--black);
+    font-weight: 400;
+}
+.priceContaiener{
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.salePrice{
+    font-size: .7vw;
+    text-decoration: line-through;
+    opacity: .6;
+    font-weight: 600;
+    color: var(--black);
+}
+.price{
+    font-size: 1vw;
+    margin-top: .3vw;
+    font-weight: 800;
+    color: var(--black);
+}
+.disDescr{
+    font-size: .7vw;
+    font-weight: 500;
+    text-align: center;
+    width: 90%;
+}
+.disDescr1{
+    font-size: .9vw;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+}
+.disDescr1 span{
+    font-size: 1vw;
+    font-weight: 800;
+}
+.modalTrigger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5vw 1vw;
+    width: 100%;
+    background-color: var(--color-enable);
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 0.5vw;
+
+}
+.modalTrigger:hover{
+    background-color: var(--color-enable-hover);
+}
+.modalTriggername{
+    color: var(--black);
+    font-size: .6vw;
+    font-weight: 600;
+    opacity: .9;
+}
+.modalTriggerIcon{
+    color: var(--color);
+    font-size: 1vw;
+    font-weight: 500;
+}
+.workList{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.workItem{
+    font-weight: 500;
+    font-size: .6vw;
+    color: var(--black);
+    opacity: .9;
+    margin: 0 1vw;
+}
+.cardButton{
+    position: absolute;
+    bottom: 1vw;
+    width: 90%;
+    left: 5%;
+    border: 1px solid var(--color);
+    color: var(--black);
+    background-color: white;
+    border-radius: .3vw;
+    padding: .7vw 0;
+    font-size: 0.7vw;
+    font-weight: 400;
+    transition: all .3s;
+    cursor: pointer;
+}
+.cardButton:hover{
+    background-color: var(--color);
+    color: white;
+}

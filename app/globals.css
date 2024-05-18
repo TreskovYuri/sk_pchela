@@ -6,5 +6,11 @@
   /* Цвета */
   --color:#0374DF;
   --color-hover:#0065c3;
+  --color-enable:#cfe8ff;
+  --color-enable-hover:#c2e0fd;
+  --black:#2d2d2d;
+}
+body{
+  background-color: #F9F9F9;
 }
 
