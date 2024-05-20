@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3vw 0;
+    
+}
+.header{
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.header1{
+    font-size: 1vw;
+    font-weight: 400;
+}
+.cardContainer{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 17vw;
+    height: 17vw;
+    box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.13);
+    background-color: white;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+}
+.cardImg{
+    height: 100%;
+    width: auto;
+}
+.textContainer{
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cardName{
+    font-size: .8vw;
+    font-weight: 500;
+}
+.cardPost{
+    font-size: .5vw;
+    font-weight: 400;
+    background-color: var(--color-enable);
+    padding: .2vw;
+    border-radius: .3vw;
+    margin-top: 0.2vw;
+}
+.cardDescription{
+    font-size: .5vw;
+    font-weight: 400;
+    margin-top: 0.2vw;
+}

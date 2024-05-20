@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    height: auto;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalWind{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+    border-radius: .3vw;
+    display: flex;
+    background-color: #EFEFEF;
+
+}
+.textContainer{
+    width: 50%;
+    padding: 3vw 2vw;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+}
+.header{
+    font-size: 1.9vw;
+    font-weight: 600;
+}
+.index{
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-top: 1.5vw;
+}
+.adress{
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+.label{
+    font-size: .8vw;
+    font-weight: 400;
+    margin-top: 1.5vw;
+    margin-bottom: .7vw;
+}
+.icon{
+    width: 1vw;
+    height: auto;
+}
+.smm{
+    display: flex;
+    gap: .3vw;
+    margin-top: 0.7vw;
+    font-size: .8vw;
+}
+.number{
+    font-size: 1.7vw;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+.time{
+    font-size: 1vw;
+    font-weight: 400;
+}
+.oferta{
+    font-size: 0.5vw;
+    margin-top: 1vw;
+    font-weight: 500;
+    opacity: .6;
+}
+
+.btn{
+    margin-top: 1vw;
+    background-color: var(--color);
+    padding: .7vw 2vw;
+    border: none;
+    border-radius: .2vw;
+    color: white;
+    font-size: 0.7vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    width: 12vw;
+}
+.btn:hover{
+    background-color: var(--color-hover);
+}
+.mapContainer{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw 0;
+}
+.ogrn{
+    font-size: 0.7vw;
+    margin-top: 0.5vw;
+    width: 90%;
+}

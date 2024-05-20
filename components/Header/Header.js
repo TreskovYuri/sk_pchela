@@ -25,9 +25,9 @@ const Header = () => {
           <span className={css.city2}>Строительная компания</span>
         </div>
         <Link spy={true} smooth={true} offset={0} duration={1500} onClick={() => setModal(false)} to="price" className={css.Link} >Цены</Link>
-        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="price" className={css.Link} >Дизайн</Link>
+        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="disign" className={css.Link} >Дизайн</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Акции</Link>
-        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Примеры работ</Link>
+        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="primeri" className={css.Link} >Примеры работ</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Отзывы</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Контакты</Link>
         <div className={css.numberContainer}>

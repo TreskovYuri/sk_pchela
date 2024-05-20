@@ -1,0 +1,102 @@
+.container{
+    width: 100%;
+    height: auto;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalWind{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+    border-radius: .3vw;
+    display: flex;
+
+}
+.textContainer{
+    width: 60%;
+    padding: 6vw 2vw;
+}
+.header{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--black);
+}
+.ul{
+    padding-left: 1vw;
+    list-style-type: square;
+    margin-top: 4vw;
+}
+.ul li{
+    color: var(--black);
+    font-size: .8vw;
+}
+.inputContainer{
+    display: flex;
+    gap: .5vw;
+    height: 1.9vw;
+    margin-top: 3vw;
+}
+.input{
+    border: 1px solid rgba(128, 128, 128, 0.56);
+    border-radius: .2vw;
+    padding-left: .7vw;
+    outline: none;
+    width: 40%;
+    font-size: .8vw;
+}
+.chechContainer{
+    display: flex;
+    margin-top: 2vw;
+    gap: .6vw;
+    align-items: center;
+}
+.checkBox{
+    width: .7vw;
+    height: .7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color);
+    border-radius: .1vw;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: .7vw;
+}
+.checkDescr{
+    font-size: .6vw;
+}
+
+.slider{
+    width: 40%;
+}
+.btn{
+    margin-top: 1vw;
+    background-color: var(--color);
+    padding: .6vw 3vw;
+    border: none;
+    border-radius: .2vw;
+    color: white;
+    font-size: 0.7vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover{
+    background-color: var(--color-hover);
+}
+.card{
+    height: 25vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.img{
+    height: 100%;
+    width: auto;
+}
+

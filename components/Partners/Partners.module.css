@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3vw 0;
+    
+}
+.header{
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.parnerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+.card{
+    width: 15%;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
