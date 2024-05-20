@@ -212,3 +212,177 @@
     height: 3vw;
     width: auto;
 }
+@media (max-width:768px) {
+    .container{
+        margin-top: 9vh;
+        padding: 5vw 0vw;
+    }
+    .header{
+        font-size: 5vw;
+    }
+    .header1{
+        font-size: 3vw;
+        font-weight: 400;
+        text-align: center;
+        width: 70%;
+        margin-top: 1vh;
+    }
+    .buttonContainer{
+        display: flex;
+        gap: 5vw;
+        height: 4vh;
+        margin-top: 3vh;
+    }
+    .button{
+        height: 100%;
+        width: 50%;
+        font-size: 3vw;
+        border-radius: .2vw;
+        padding: 1vh 2vh;
+    }
+   
+    .cardContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1vw;
+        margin-top: 2vw;
+    }
+    .card{
+        justify-content: flex-start;
+        align-items: center;
+        width: 95vw;
+        margin-top: 5vh;
+        padding: 3vh 0vw 8vh 0;
+
+    }
+    .cardName{
+        font-size: 4vw;
+    }
+    .descriptionContainer{
+        display: flex;
+        gap: 3vw;
+        background-color: #F5F5F5;
+        border-radius: .5vw;
+        padding: 5vw;
+        margin: 3vh 2vw;
+    
+    }
+    .faq{
+        height: 3vh;
+        width: 3vh;
+        font-size: 4vw;
+        background-color: var(--color);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 100vw;
+        
+    }
+    .description{
+        width: 90%;
+        height: 1.7vw;
+        font-size: 3vw;
+        color: var(--black);
+        font-weight: 400;
+    }
+    .priceContaiener{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+    .salePrice{
+        font-size: 4vw;
+        text-decoration: line-through;
+        opacity: .6;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .price{
+        font-size: 5vw;
+        margin-top: 2vw;
+        font-weight: 800;
+        color: var(--black);
+        margin-bottom: 3vh;
+    }
+    .disDescr{
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: center;
+        width: 90%;
+    }
+    .disDescr1{
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: center;
+        width: 60%;
+    }
+    .disDescr1 span{
+        font-size: 5vw;
+        font-weight: 800;
+    }
+    .modalTrigger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vh 5vw;
+        width: 100%;
+        background-color: var(--color-enable);
+        cursor: pointer;
+        transition: all .3s;
+        margin-top:2vw;
+    
+    }
+    .modalTriggername{
+        color: var(--black);
+        font-size: 3vw;
+        font-weight: 600;
+        opacity: .9;
+    }
+    .modalTriggerIcon{
+        font-size: 3vh;
+    }
+    .workItem{
+        font-weight: 500;
+        font-size:3vw;
+        color: var(--black);
+        opacity: .9;
+        margin: 0 1vw;
+    }
+    .cardButton{
+        position: absolute;
+        bottom: 3vh;
+        width: 90%;
+        left: 5%;
+        border: 1px solid var(--color);
+        color: var(--black);
+        background-color: white;
+        border-radius: 2vw;
+        padding: 2vh 0;
+        font-size:3vw;
+        font-weight: 400;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .cardButton:hover{
+        background-color: var(--color);
+        color: white;
+    }
+    .hit{
+        position: absolute;
+        top: 0;
+        right: 6vw;
+        height: 6vh;
+        width: auto;
+    } 
+}

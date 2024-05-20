@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import css from './Price.module.css'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
@@ -198,7 +198,16 @@ const ModalBlock = ({ demontazh, chernovie, chistovie }) => {
     const [demontazhModal, setDemontazhModal] = useState(false);
     const [chernovieModal, setChernovieModal] = useState(false);
     const [chistovieModal, setChistovieModal] = useState(false);
+    const [height, setHeight] = useState(10)
 
+    useEffect(()=>{
+        const width = window.screen.width
+        if(width<=768){
+            setHeight(50)
+        }else{
+            setHeight(10)
+        }
+    },[])
 
 
     return (
@@ -213,7 +222,7 @@ const ModalBlock = ({ demontazh, chernovie, chistovie }) => {
                     {demontazhModal ? '-' : '+'}
                 </motion.span>
             </div>
-            <motion.div animate={{ height: demontazhModal ? '8vw' : 0, paddingTop: demontazhModal ? '1vw' : 0 }} className={css.workList}>
+            <motion.div animate={{ height: demontazhModal ? `${height*0.8}vw` : 0, paddingTop: demontazhModal ? '1vw' : 0 }} className={css.workList}>
                 {demontazh.map((e, index) => (
                     <span key={index} className={css.workItem}>{e}</span>
                 ))}
@@ -228,7 +237,7 @@ const ModalBlock = ({ demontazh, chernovie, chistovie }) => {
                     {chernovieModal ? '-' : '+'}
                 </motion.span>
             </div>
-            <motion.div initial={{ height: 0, }} animate={{ height: chernovieModal ? '10vw' : 0, paddingTop: chernovieModal ? '1vw' : 0 }} className={css.workList}>
+            <motion.div initial={{ height: 0, }} animate={{ height: chernovieModal ? `${height}vw` : 0, paddingTop: chernovieModal ? '1vw' : 0 }} className={css.workList}>
                 {chernovie.map((e, index) => (
                     <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} key={index} className={css.workItem}>{e}</motion.span>
                 ))}
@@ -246,7 +255,7 @@ const ModalBlock = ({ demontazh, chernovie, chistovie }) => {
                             {chistovieModal ? '-' : '+'}
                         </motion.span>
                     </div>
-                    <motion.div initial={{ height: 0, }} animate={{ height: chistovieModal ? '11vw' : 0, paddingTop: chistovieModal ? '1vw' : 0 }} className={css.workList}>
+                    <motion.div initial={{ height: 0, }} animate={{ height: chistovieModal ? `${height*1.1}vw` : 0, paddingTop: chistovieModal ? '1vw' : 0 }} className={css.workList}>
                         {chernovie.map((e, index) => (
                             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} key={index} className={css.workItem}>{e}</motion.span>
                         ))}

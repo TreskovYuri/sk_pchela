@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import css from './Hero.module.css'
+import Calculator from '../Calculator/Calculator'
 
 
 const Hero = () => {
@@ -53,7 +54,7 @@ const Hero = () => {
             
 
             <div className={css.formContainer}>
-
+                <Calculator/>
             </div>
             <Image src='img/hero_bacground.webp' unoptimized width={100} height={100} sizes='100' className={css.heroBackground} alt={'Фоновое изображение'} />
         </div>

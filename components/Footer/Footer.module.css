@@ -5,7 +5,8 @@
     margin-top: 3vw;
     display: flex;
     align-items: center;
-    padding: 0 15vw;
+    padding: 0 20vw;
+    justify-content: space-between;
 }
 .logoContainer{
     display: flex;
@@ -55,4 +56,71 @@
 }
 .logo:hover{
     opacity: .7;
+}
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .3vw;
+}
+.Link{
+    font-size: .6vw;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+    opacity: 1;
+}
+.Link:hover{
+    opacity: .6vw;
+}
+.numberContainer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.number{
+    font-size: .8vw;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+.time{
+    font-size: .6vw;
+    font-weight: 400;
+}
+.btn{
+    margin-top: .7vw;
+    background-color: var(--color);
+    padding: .3vw .6vw;
+    border: none;
+    border-radius: .2vw;
+    color: white;
+    font-size: 0.7vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    width: 100%;
+}
+.btn:hover{
+    background-color: var(--color-hover);
+}
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+}
+.iconHeader{
+    font-size: .6vw;
+    color: white;
+    font-weight: 500;
+}
+.iconBlock{
+    display: flex;
+    gap: .2vw;
+    margin-top: 0.3vw;
+}
+.icon{
+    width: 1vw;
+    height: auto;
+    transition: all .2s;
+}
+.icon:hover{
+    transform: scale(103%);
 }

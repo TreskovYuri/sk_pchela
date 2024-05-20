@@ -97,3 +97,104 @@
     margin-top: 0.5vw;
     width: 90%;
 }
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalWind{
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+        box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+        border-radius: .3vw;
+        display: flex;
+        background-color: #EFEFEF;
+        flex-direction: column;
+    
+    }
+    .textContainer{
+        width:100%;
+        padding: 5vh 2vh;
+        display: flex;
+        flex-direction: column;
+        color: var(--black);
+    }
+    .header{
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    .index{
+        font-size:4vw;
+        font-weight: 400;
+        margin-top: 1.5vw;
+    }
+    .adress{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .label{
+        font-size: 3vw;
+        font-weight: 400;
+        margin-top: 1.5vw;
+        margin-bottom: 3vh;
+    }
+    .icon{
+        width: 5vw;
+        height: auto;
+    }
+    .smm{
+        display: flex;
+        gap: 3vw;
+        margin-top: 0.7vw;
+        font-size: 4vw;
+    }
+    .number{
+        font-size:4vw;
+        font-weight: 600;
+        margin-top: 2vh;
+    }
+    .time{
+        font-size:3vw;
+        font-weight: 400;
+    }
+    .oferta{
+        font-size: 2vw;
+        font-weight: 500;
+        opacity: .6;
+    }
+    
+    .btn{
+        margin-top: 3vh;
+        background-color: var(--color);
+        padding: .7vw 0vw;
+        border: none;
+        border-radius: .2vw;
+        color: white;
+        font-size: 3vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s;
+        width: 50%;
+    }
+    .btn:hover{
+        background-color: var(--color-hover);
+    }
+    .mapContainer{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2vh 1vh;
+    }
+    .ogrn{
+        font-size: 2vw;
+        margin-top: 0.5vw;
+        width: 90%;
+    }
+}

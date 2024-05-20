@@ -1,0 +1,42 @@
+.checkRow{
+    display: flex;
+    gap: .2vw;
+}
+.text{
+    font-size: 0.5vw;
+    width: 90%;
+}
+.checkBox{
+    width: .7vw;
+    height: .7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color);
+    border-radius: .1vw;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: .6vw;
+}
+@media (max-width:768px) {
+    .checkRow{
+        display: flex;
+        gap: 2vw;
+    }
+    .text{
+        font-size: 3vw;
+        width: 90%;
+    }
+    .checkBox{
+        width: 4vw;
+        height: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color);
+        border-radius: .1vw;
+        border: 1px solid gray;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+}

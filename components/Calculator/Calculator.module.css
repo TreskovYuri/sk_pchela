@@ -1,0 +1,108 @@
+.container{
+    width: 22vw;
+    height: auto;
+    background-color: white;
+    z-index: 11;
+    box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+    border-radius: .3vw;
+    padding: 2vw;
+}
+.inputContainer{
+    display: flex;
+    margin-bottom: 1vw;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--black);
+}
+.label{
+    font-size: .45vw;
+    font-weight: 600;
+}
+.checkContainer{
+    display: flex;
+    gap: .2vw;
+    margin-top: 0.3vw;
+    margin-bottom: 0.4vw;
+}
+.square{
+    font-size: .5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.squareInput{
+    width: 80%;
+}
+.check2Container{
+    display: flex;
+    flex-direction: column;
+    gap: .4vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.squareBox{
+    margin: .4vw 0 .5vw 0;
+}
+.buttonContainer{
+    width: 40%;
+}
+@media (max-width:768px) {
+    .container{
+        width: 95%;
+        height: auto;
+        background-color: white;
+        z-index: 11;
+        box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+        border-radius: .5vh;
+        padding: 5vh 2vh;
+        margin-top: 3vh;
+    }
+    .inputContainer{
+        margin-bottom: 1vw;
+        flex-direction: column;
+        
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--black);
+    }
+    .label{
+        font-size: 2.7vw;
+        font-weight: 600;
+        margin-top: 1vh;
+    }
+    .checkContainer{
+        display: flex;
+        gap: 3vw;
+        margin-top: 0.3vw;
+        margin-bottom: 2vw;
+    }
+    .square{
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+    .squareInput{
+        width: 80%;
+    }
+    .check2Container{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        margin-top: 2vh;
+        margin-bottom: 1vw;
+    }
+    .squareBox{
+        margin: 2vh 0 2vh 0;
+    }
+    .buttonContainer{
+        width: 60%;
+        margin-top: 2vh;
+    }
+}
+
+

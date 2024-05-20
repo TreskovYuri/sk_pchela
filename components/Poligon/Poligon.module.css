@@ -57,3 +57,68 @@
     transition: all .3s;
     border-radius: .2vw;
 }
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        background-image: url('/img/poligon.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 0;
+    }
+    .textContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-top: 5vw;
+        padding-right: 2vw;
+    }
+    .header{
+        font-size: 5vw;
+        font-weight: 600;
+        color: white;
+        width: 80%;
+    }
+    .ul{
+        padding-left: 4vw;
+        list-style-type: square;
+        margin-top: 3vh;
+    }
+    .ul li{
+        color: white;
+        font-size: 3vw;
+        font-weight: 400;
+        margin-top: 1vh;
+    }
+    .Slider{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    .card{
+        padding: 0 4vw;
+        width: 100vw;
+    }
+    .imgBox{
+        width: 90vw;
+        height: 90vw;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img{
+        width: 120%;
+        height: auto;
+        transition: all .3s;
+        border-radius: .2vw;
+    }
+}

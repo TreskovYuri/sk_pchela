@@ -187,16 +187,17 @@
     .container{
         width: 100%;
         height: 9vh;
-        background-color: #06191fd3;
+        background-color: #ffffff;
         box-shadow:  0px 15px 26px -10px rgba(0, 0, 0, 0.7);
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 999;
         position: fixed;
+        padding: 0 2vw;
     }
     .logo{
-        height: 6vh;
+        height: 5vh;
         margin-left: 4vw;
         transition: all .3s;
         cursor: pointer;
@@ -214,27 +215,17 @@
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         transition:  transform .3s ease-in-out;
         z-index: 100;
         gap: 5vh;
-    }
-    .nav::before{
-        z-index: 0;
-        content: '';
-        width: 150vw;
-        height: 150vw;
-        position: absolute;
-        background:radial-gradient(rgba(0, 114, 145, 0.158),rgba(2, 51, 59, 0.212),transparent,transparent,transparent);
-        animation: animate 15.5s linear infinite;
-        
     }
     .navActive{
         transform: translateX(100%);
     }
     .Link{
         font-family: var(--font-family);
-        font-size: 7vw;
+        font-size: 5vw;
         font-weight: 600;
         cursor: pointer;
         transition: all .3s;
@@ -257,7 +248,7 @@
         opacity: 1;
     }
     .num{
-        font-size: 6vw;
+        font-size: 4vw;
     }
     .butgerTrigger{
         z-index: 9;
@@ -267,7 +258,7 @@
         font-weight: 600;
         opacity: .8;
         font-family: var(--font-family);
-        color: rgb(233, 250, 255);
+        color: rgb(0, 0, 0);
         transform: rotate(90deg); /* Поворачиваем элемент на 90 градусов */
     }
     .close{
@@ -279,8 +270,34 @@
         font-size: 5vh;
         font-weight: 600;
         opacity: .8;
-        color: #effbffd3;
+        color: #000000d3;
         font-family: var(--font-family);
     }
-
+    .labelNumber{
+        display: none;
+    }
+    .buttonIconsContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .button{
+        width: 60%;
+        font-size: 4vw;
+        padding: 1vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1vh;
+    }
+    .iconsBlock{
+        flex-direction: row;
+        height: auto;
+        margin-top: 2vh;
+        gap: 1vh;
+    }
+    .icon{
+        width: 4vh;
+        height: 4vh;
+    }
 }

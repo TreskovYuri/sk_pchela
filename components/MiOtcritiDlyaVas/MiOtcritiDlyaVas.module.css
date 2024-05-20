@@ -53,6 +53,7 @@
     width: 100%;
     height: 2vw;
     margin-top: .5vw;
+    font-size: .7vw;
 }
 .area{
     height: 5vw;
@@ -102,4 +103,120 @@
 }
 .btn:hover{
     background-color: var(--color-hover);
+}
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 5vh 0;
+        position: relative;
+        
+    }
+    .header{
+        font-size: 6vw;
+        font-weight: 600;
+        color: white;
+        z-index: 1;
+    }
+    .header1{
+        font-size: 3vw;
+        font-weight: 400;
+        color: white;
+        z-index: 1;
+        width: 90%;
+        text-align: center;
+        margin-top: 1vh;
+    }
+    .bacgroundImg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        z-index: 0;
+    }
+    .blockContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-top: 3vh;
+    }
+    .block{
+        width: 100%;
+        display: flex;
+        padding: 2vw;
+        gap: .6vw   ;
+        padding: 2vh;
+        flex-direction: column;
+    }
+    .inputContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .input{
+        border: 1px solid rgba(128, 128, 128, 0.56);
+        border-radius: .2vw;
+        padding-left: 2vw;
+        outline: none;
+        z-index: 1;
+        width: 100%;
+        height: 4vh;
+        margin-top: 1vh;
+        font-size: 3vw;
+    }
+    .area{
+        height: 8vh;
+        resize: none;
+        padding: 1vh;
+    }
+    .chechContainer{
+        display: flex;
+        margin-top: 1vw;
+        gap: 2vw;
+        align-items: center;
+    }
+    .checkBox{
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color);
+        border-radius: .1vw;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 3vw;
+        background-color: white;
+        box-sizing: border-box;
+    }
+    .checkDescr{
+        font-size: 3vw;
+        color: white;
+        width: 90%;
+    }
+    .link{
+        font-size: 3vw;
+        color: white;
+    }
+    .btn{
+        margin-top: 3vh;
+        background-color: var(--color);
+        padding: 1vh 2vw;
+        width: 100%;
+        border: none;
+        border-radius: .2vw;
+        color: white;
+        font-size: 3vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .btn:hover{
+        background-color: var(--color-hover);
+    }
 }

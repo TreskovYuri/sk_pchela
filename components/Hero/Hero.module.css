@@ -89,4 +89,78 @@
 }
 .formContainer{
     width: 50%;
+    z-index: 1;
+}
+
+@media (max-width:768px) {
+    .container{
+        height: auto;
+        margin-top: 9vh;
+        flex-direction: column;
+        padding: 5vh 0vw;
+        overflow: hidden;
+    }
+    .heroBackground{
+        width: auto;
+        height: 100%;
+    }
+    .textContainer{
+        width: 100%;
+        padding: 3vh;
+    }
+    .mapIcon{
+        width: 3vh;
+    }
+    .city{
+        font-size: 5vw;
+    }
+    .header{
+        color: var(--black);
+        font-size: 5vw;
+        width: 80%;
+        margin-top: 3vh;
+        font-weight: 600;
+    }
+    .description{
+        color:  var(--black);
+        z-index: 1;
+        font-size: 4vw;
+        width: 80%;
+        font-weight: 400;
+        margin-top: 1vw;
+    }
+    .description span{
+        color: var(--color);
+    
+        font-weight: 600;
+        margin-top: 1vw;
+    }
+    .cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4vh;
+    }
+    .card{
+        gap: 2vw;
+        margin-top: 1vw;
+    }
+    .cardImg{
+        height: 3vh;
+    }
+    .cardTextContainer{
+        gap: 2vw;
+    }
+    .cardName{
+        font-size: 3vw;
+
+    }
+    .cardDescription{
+        font-size: 2vw;
+    }
+    .formContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

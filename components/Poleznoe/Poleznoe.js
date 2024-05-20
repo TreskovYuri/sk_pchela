@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import css from './Poleznoe.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
@@ -57,6 +57,16 @@ export default Poleznoe
 
 const Card = ({ map }) => {
     const [modal, setModal] = useState(false)
+    const [height, setHeight] = useState(10)
+
+    useEffect(()=>{
+        const width = window.screen.width
+        if(width<=768){
+            setHeight(50)
+        }else{
+            setHeight(10)
+        }
+    },[])
     return (
         <>
             <div className={css.triggerBox} onClick={() => setModal(!modal)}>
@@ -64,7 +74,7 @@ const Card = ({ map }) => {
                 <span className={css.vopros}>{map.vopros}</span>
                 <Image src={'img/arrow.svg'} unoptimized width={20} height={20} sizes='100' className={modal ? `${css.arrow} ${css.active}` : css.arrow} />
             </div>
-            <motion.div className={css.modalWind} initial={{ height: 0 }} animate={{ height: modal ? '10vw' : 0 }}>
+            <motion.div className={css.modalWind} initial={{ height: 0 }} animate={{ height: modal ? `${height}vw` : 0 }}>
                 <span className={css.otvet}>{map.otvet1}</span>
                 <span className={css.otvet}>{map.otvet2}</span>
             </motion.div>

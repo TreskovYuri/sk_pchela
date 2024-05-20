@@ -97,3 +97,109 @@
     width: 100%;
     height: auto;
 }
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+        padding: 3vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalWind{
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.236);
+        border-radius: .3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    
+    }
+    .textContainer{
+        width: 90%;
+        padding: 6vw 2vw;
+    }
+    .header{
+        font-size: 5vw;
+        font-weight: 600;
+        color: var(--black);
+        width: 100%;
+        margin-bottom: 1vw;
+    }
+    .header1{
+        color: var(--black);
+        font-size: 3vw;
+        font-weight: 500;
+        background-color: var(--color-enable);
+        padding: .3vw 1vw;
+        border-radius: .2vw;
+        margin-top: 1vw;
+    }
+    .inputContainer{
+        display: flex;
+        gap: 1vw;
+        height:6vh;
+        margin-top: 2vh;
+        flex-direction: column;
+    }
+    .input{
+        border: 1px solid rgba(128, 128, 128, 0.56);
+        border-radius: .2vw;
+        padding-left: 2vw;
+        outline: none;
+        width: 89%;
+        font-size: 3vw;
+        height: 4vh;
+    }
+    .chechContainer{
+        display: flex;
+        margin-top: 2vw;
+        gap: 2vw;
+        align-items: center;
+    }
+    .checkBox{
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color);
+        border-radius: .1vw;
+        border: 1px solid gray;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+    .checkDescr{
+        font-size: 3vw;
+    }
+    
+    .btn{
+        margin-top: 1vw;
+        background-color: var(--color);
+        padding: 1vh 2vh;
+        border: none;
+        border-radius: .2vw;
+        color: white;
+        font-size: 3vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s;
+        margin-top: 2vh;
+    }
+    .btn:hover{
+        background-color: var(--color-hover);
+    }
+    .imgContainer{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+    }
+}

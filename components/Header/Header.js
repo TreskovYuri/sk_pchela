@@ -20,10 +20,6 @@ const Header = () => {
       </div>
       <a className={css.mobileNumber} href="tel:+79950404036">+7 (995) 040 40 36</a>
       <nav className={`${css.nav} ${modal && css.navActive}`}>
-        <div className={css.cityContainer}>
-          <span className={css.city1}>Пчела</span>
-          <span className={css.city2}>Строительная компания</span>
-        </div>
         <Link spy={true} smooth={true} offset={0} duration={1500} onClick={() => setModal(false)} to="price" className={css.Link} >Цены</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="disign" className={css.Link} >Дизайн</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Акции</Link>

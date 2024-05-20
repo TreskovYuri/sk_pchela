@@ -114,3 +114,124 @@
 .btn:hover{
     background-color: var(--color-hover);
 }
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 0vw 5vw 5vw 5vw;
+        flex-direction: column;
+    }
+    .block1{
+        width: 100%;
+    }
+    .block2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0;
+    }
+    .header{
+        font-size: 4vw;
+        color: var(--black);
+        font-weight: 600;
+    }
+    .triggerBox{
+        display: flex;
+        box-shadow:  4px 4px 11px 4px rgba(0, 0, 0, 0.21);
+        margin-top: 1vw;
+        padding: 2vh;
+        border-radius: .2vw;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    .faq{
+        border: 2px solid var(--color);
+        border-radius: 10vw;
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color);
+        font-weight: 600;
+        font-size: 3vw;
+        margin-right: 2vw;
+    }
+    .vopros{
+        width: 90%;
+        font-size: 3vw;
+        color: var(--black);
+    }
+    .arrow{
+        width: 3vw;
+        height: auto;
+        transition: all .3s;
+    }
+    .active{
+        transform: rotate(180deg);
+    }
+    .modalWind{
+        background-color: rgba(168, 168, 168, 0.152);
+        border-radius: 0 0 .3vw .3vw;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0vw 3vw;
+        gap: .5vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .otvet{
+        font-size: 3vw;
+        margin-top: 1vw 0;
+        opacity: .8;
+        color: var(--black);
+    }
+    .faqBox{
+        height: 90.5vw;
+        width: 90.5vw;
+        border: 2px solid rgba(128, 128, 128, 0.193);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    .phoneImg{
+        width: 20%;
+        height: auto;
+    }
+    .BigFaq{
+        font-size: 6vw;
+        color: var(--black);
+        font-weight: 600;
+        margin-top: 0.5vw;
+    }
+    .MiniFaq{
+        font-size: 4vw;
+        color: var(--black);
+        font-weight: 400;
+        margin-top: 0.5vw;
+        width: 85%;
+        text-align: center;
+    }
+    .btn{
+        margin-top: 2vh;
+        background-color: var(--color);
+        padding: 1vh 2vh;
+        border: none;
+        border-radius: .2vw;
+        color: white;
+        font-size: 4vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .btn:hover{
+        background-color: var(--color-hover);
+    }
+}

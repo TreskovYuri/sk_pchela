@@ -164,3 +164,16 @@ body{
   margin: 0;
   padding: 0;
 }
+
+@media (max-width:768px) {
+  .alice-carousel__prev-btn-item span{
+    width: 12vw;
+    height: 8vw;
+    font-size: 3vw;
+  }
+  .alice-carousel__next-btn-item span{
+    width: 12vw;
+    height: 8vw;
+    font-size: 3vw;
+  }
+}

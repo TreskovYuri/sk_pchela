@@ -1,0 +1,121 @@
+.modalTrigger{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    height: 1.5vw;
+    align-items: center;
+    padding-left: .3vw;
+    font-size: .45vw;
+    border-radius: .3vw;
+    margin-top: .3vw;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1vw;
+}
+.triangleBox{
+    border-left: 1px solid rgba(128, 128, 128, 0.295);
+    width: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.triangle{
+    width: .5vw;
+    height: auto;
+    opacity: .5;
+    transform: rotate(180deg);
+    transition: all .3s;
+}
+.triangleActive{
+    transform: rotate(360deg);
+}
+.modalWind{
+    position: absolute;
+    top: 110%   ;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.123);
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    border-radius: .2vw;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+}
+.modalItem{
+    font-size: .55vw;
+    padding: .5vw 1vw;
+    transition: all .3s;
+}
+.modalItem:hover{
+    background-color: rgb(245, 243, 243);
+}
+.modalItemActive{
+    font-weight: 600;
+}
+@media (max-width:768px) {
+    .modalTrigger{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        border: 1px solid rgba(128, 128, 128, 0.295);
+        height: 4vh;
+        align-items: center;
+        padding-left: 1vw;
+        font-size: 3vw;
+        border-radius: .7vh;
+        margin-top: .3vw;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 1vw;
+    }
+    .triangleBox{
+        border-left: 1px solid rgba(128, 128, 128, 0.295);
+        width:8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .triangle{
+        width: 3vw;
+        height: auto;
+        opacity: .5;
+        transform: rotate(180deg);
+        transition: all .3s;
+    }
+    .triangleActive{
+        transform: rotate(360deg);
+    }
+    .modalWind{
+        position: absolute;
+        top: 110%   ;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow:  0px 0px 22px 4px rgba(0, 0, 0, 0.123);
+        border: 1px solid rgba(128, 128, 128, 0.11);
+        border-radius: .2vw;
+        overflow: hidden;
+        background-color: white;
+        z-index: 1;
+    }
+    .modalItem{
+        font-size: 3vw;
+        padding: 1vh 1vw;
+        transition: all .3s;
+        z-index: 11;
+    }
+    .modalItem:hover{
+        background-color: rgb(245, 243, 243);
+    }
+    .modalItemActive{
+        font-weight: 600;
+    }
+}
