@@ -3,7 +3,7 @@ import Image from "next/image";
 import css from "./Footer.module.css";
 import { Link } from "react-scroll";
 
-const Footer = () => {
+const Footer = ({setModal}) => {
   return (
     <div className={css.container}>
       <div className={css.logoContainer}>
@@ -88,7 +88,7 @@ const Footer = () => {
       <div className={css.numberContainer}>
         <span className={css.number}>+7 (495) 127-93-58</span>
         <span className={css.time}>Без выходных 9:00 - 22:00</span>
-        <button className={css.btn}>Заказать звонок</button>
+        <button className={css.btn} onClick={()=>setModal(true)}>Заказать звонок</button>
       </div>
       <div className={css.iconContainer}>
         <span className={css.iconHeader}>Присоединяйтесь:</span>

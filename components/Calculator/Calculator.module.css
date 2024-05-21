@@ -48,6 +48,9 @@
 .buttonContainer{
     width: 40%;
 }
+.trigger{
+    width: 80%;
+}
 @media (max-width:768px) {
     .container{
         width: 95%;

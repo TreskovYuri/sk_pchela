@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import Image from 'next/image'
 
 
-const Price = () => {
+const Price = ({setModal}) => {
     const type1 = [
         {
             "name": "Евро",
@@ -116,7 +116,7 @@ const Price = () => {
                 <span className={type ? `${css.button} ${css.avtiveButton}` : css.button} onClick={() => setType(true)}>Новостройка</span>
                 <span className={!type ? `${css.button} ${css.avtiveButton}` : css.button} onClick={() => setType(false)}>Вторичка</span>
             </div>
-            {type ? <TypeHandler map={type1} type={type} /> : <TypeHandler map={type2} type={type} />}
+            {type ? <TypeHandler map={type1} type={type} setModal={()=>setModal(true)}/> : <TypeHandler map={type2} type={type} setModal={()=>setModal(true)}/>}
 
         </div>
     )
@@ -125,7 +125,7 @@ const Price = () => {
 export default Price
 
 
-const TypeHandler = ({ map, type }) => {
+const TypeHandler = ({ map, type, setModal }) => {
     if (!type) {
         return (
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className={css.cardContainer}>
@@ -152,7 +152,7 @@ const TypeHandler = ({ map, type }) => {
                             </div>
 
                             <ModalBlock chernovie={e.chernovie} chistovie={e.chistovie} demontazh={e.demontazh} />
-                            <button className={css.cardButton}>Рассчитать стоимость</button>
+                            <button className={css.cardButton} onClick={setModal}>Рассчитать стоимость</button>
                         </div>
                     ))
                 }

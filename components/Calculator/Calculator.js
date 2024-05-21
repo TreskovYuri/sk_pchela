@@ -6,7 +6,7 @@ import ChechBox from "../Widgets/ChechBox/ChechBox";
 import RangeRow from "../Widgets/RangeRow/RangeRow";
 import ColorButton from "../Widgets/ColorButton/ColorButton";
 
-const Calculator = () => {
+const Calculator = ({ setModal }) => {
   const [currentType1, setCurrentType1] = useState("Вся квартира");
   const lst1 = ["Вся квартира", "Кухня", "Ванная", "Дом", "Офис"];
   const lst2 = ["Вся квартира", "Кухня", "Ванная", "Дом", "Офис"];
@@ -20,17 +20,23 @@ const Calculator = () => {
       <div className={css.inputContainer}>
         <div className={css.block}>
           <span className={css.label}>Что нужно отремонтировать:</span>
-          <ModalBlock
-            lst={lst1}
-            type={currentType1}
-            setType={setCurrentType1}
-          />
+          <div className={css.trigger}>
+            <ModalBlock
+              lst={lst1}
+              type={currentType1}
+              setType={setCurrentType1}
+            />
+          </div>
+
           <span className={css.label}>Вид ремонта:</span>
-          <ModalBlock
-            lst={lst2}
-            type={currentType2}
-            setType={setCurrentType2}
-          />
+          <div className={css.trigger}>
+            <ModalBlock
+              lst={lst2}
+              type={currentType2}
+              setType={setCurrentType2}
+            />
+          </div>
+
           <span className={css.label}>Тип недвижимости</span>
           <div className={css.checkContainer}>
             <ChechBox
@@ -80,23 +86,30 @@ const Calculator = () => {
               text={"Спецификация на черновой материал (бесплатно)"}
             />
           </div>
-          <span className={css.label}>Срок работ: от {parseInt(parseInt(square)+20)} до {parseInt(parseInt(square)+30)} дней</span>
-          <div className={css.squareBox}><RangeRow percent={square/2}/></div>
+          <span className={css.label}>
+            Срок работ: от {parseInt(parseInt(square) + 20)} до{" "}
+            {parseInt(parseInt(square) + 30)} дней
+          </span>
+          <div className={css.squareBox}>
+            <RangeRow percent={square / 2} />
+          </div>
 
-          <span className={css.label}>Скидка составит: {parseInt(parseInt(square)*152)} руб.</span>
-          <div className={css.squareBox}><RangeRow percent={square/3}/></div>
+          <span className={css.label}>
+            Скидка составит: {parseInt(parseInt(square) * 152)} руб.
+          </span>
+          <div className={css.squareBox}>
+            <RangeRow percent={square / 3} />
+          </div>
         </div>
-        
       </div>
       <ChechBox
         check={policy}
         setCheck={() => setPolicy(!policy)}
         text={"Я даю свое согласие на обработку персональных данных."}
       />
-      <div className={css.buttonContainer}>
-        <ColorButton text={'Рассчитать стоимость'} onPress={()=>{}}/>
+      <div className={css.buttonContainer} onClick={() => setModal(true)}>
+        <ColorButton text={"Рассчитать стоимость"} onPress={() => {}} />
       </div>
-      
     </div>
   );
 };
