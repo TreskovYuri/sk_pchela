@@ -9,7 +9,7 @@ import axios from 'axios';
 
 // Данные для отправки в телеграмм
 const token = '7089513803:AAFUJXjpJAfcR-oNZ_pg7o2i964EEQ4DCWM'
-const chatId = '862147971'
+const chatId = '-4235293967'
 const URI_API = `https://api.telegram.org/bot${ token }/sendMessage`
 
 
