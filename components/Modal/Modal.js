@@ -69,14 +69,4 @@ const Modal = ({setModal}) => {
   )
 }
 
-export default Modalimport css from './Modal.module.css'
-
-const Modal = () => {
-  return (
-    <div className={css.container}>
-
-    </div>
-  )
-}
-
-export default Modal
+export default Modal;
