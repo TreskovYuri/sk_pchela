@@ -9,8 +9,8 @@ import ColorButton from "../Widgets/ColorButton/ColorButton";
 const Calculator = () => {
   const [currentType1, setCurrentType1] = useState("Вся квартира");
   const lst1 = ["Вся квартира", "Кухня", "Ванная", "Дом", "Офис"];
-  const lst2 = ["Вся квартира", "Кухня", "Ванная", "Дом", "Офис"];
-  const [currentType2, setCurrentType2] = useState("Вся квартира");
+  const lst2 = ["Черновая отделка", "Косметический", "Капитальный", "Евро", "Дизайнерский"];
+  const [currentType2, setCurrentType2] = useState("Черновая отделка");
   const [checkNewOld, setCHeckNewOld] = useState(false);
   const [square, setSquare] = useState(10);
   const [policy, setPolicy] = useState(true);

@@ -3,7 +3,7 @@ import css from './SeasonSale.module.css'
 
 const SeasonSale = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} id='sales'>
       <h2 className={css.header}>Сезонные акции</h2>
       <div className={css.imgContainer}>
         <Image src={'img/sale1.jpg'} unoptimized sizes='100' width={100} height={200} className={css.img}/>

@@ -10,9 +10,9 @@ import Image from 'next/image'
 const Header = () => {
   const [modal, setModal] = useState(false)
   return (
-    <motion.section transition={{ duration: .3, ease: 'easeOut', delay: 3 }} className={css.container}>
+    <motion.section transition={{ duration: .3, ease: 'easeOut', delay: 3 }} className={css.container} >
       <div className={css.logoContainer}>
-        <Image src='img/logo.png' className={css.logo} unoptimized width={50} height={50} sizes='100' alt='Логотип компании'/>
+        <Link spy={true} smooth={true} offset={0} duration={1500}  to="hero"><Image src='img/logo.png' className={css.logo} unoptimized width={50} height={50} sizes='100' alt='Логотип компании'/></Link>
         <div className={css.textContainer}>
           <span className={css.text1}>Пчела</span>
           <span className={css.text2}>Строительная компания</span>
@@ -22,9 +22,9 @@ const Header = () => {
       <nav className={`${css.nav} ${modal && css.navActive}`}>
         <Link spy={true} smooth={true} offset={0} duration={1500} onClick={() => setModal(false)} to="price" className={css.Link} >Цены</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="disign" className={css.Link} >Дизайн</Link>
-        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Акции</Link>
+        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="sales" className={css.Link} >Акции</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="primeri" className={css.Link} >Примеры работ</Link>
-        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Отзывы</Link>
+        <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="otzivi" className={css.Link} >Отзывы</Link>
         <Link spy={true} smooth={true} offset={-50} duration={1500} onClick={() => setModal(false)} to="contacts" className={css.Link} >Контакты</Link>
         <div className={css.numberContainer}>
           <a className={`${css.Link} ${css.num}`} onClick={() => setModal(false)} href="tel:+79950404036">+7 (995) 040 40 36</a>

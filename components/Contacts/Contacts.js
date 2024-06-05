@@ -28,7 +28,7 @@ const Contacts = () => {
 
 
     return (
-        <div className={css.container}>
+        <div className={css.container} id='contacts'>
             <div className={css.modalWind}>
                 <div className={css.textContainer}>
                     <h3 className={css.header}>Контакты</h3>

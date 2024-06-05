@@ -57,7 +57,7 @@ const Otzivi = () => {
 
     ]
   return (
-    <div className={css.container}>
+    <div className={css.container} id='otzivi'>
         <h2 className={css.header}>Отзывы наших клиентов</h2>
         <div className={css.slider}  id='otzivi_slider'>
             <AliceCarousel autoWidth infinite autoPlayStrategy='default' animationEasingFunction='linear' >

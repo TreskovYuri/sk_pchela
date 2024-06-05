@@ -27,7 +27,7 @@ const Hero = () => {
         },
     ]
     return (
-        <div className={css.container}>
+        <div className={css.container} id='hero'>
             <div className={css.textContainer}>
                 <h2 className={css.city}>
                     <Image src='img/map_icon.svg' unoptimized width={100} height={100} sizes='100' className={css.mapIcon} alt='Иконка карты'/>
