@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import css from './Rassrochka.module.css'
 
-const Rassrochka = () => {
+const Rassrochka = ({setModal}) => {
   return (
     <div className={css.container}>
         <div className={css.filter}></div>
@@ -15,7 +15,7 @@ const Rassrochka = () => {
                 <li>Оформление в офисе за 20 минут</li>
                 <li>Сроком до 18 месяцев</li>
             </ul>
-            <button className={css.button}>Получить рассрочку</button>
+            <button className={css.button} onClick={()=>setModal(true)}>Получить рассрочку</button>
             <span className={css.policy}>
             Предоставляя услугу ремонт квартир в рассрочку, ООО «ГК Феникс» не оказывает финансовые и Банковские услуги самостоятельно. Услуги по предоставлению кредита или рассрочки предоставляются Банками РФ в соответствии с законодательством РФ.
             </span>

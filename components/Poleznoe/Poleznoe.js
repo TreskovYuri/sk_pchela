@@ -4,7 +4,7 @@ import css from './Poleznoe.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-const Poleznoe = () => {
+const Poleznoe = ({setModal}) => {
     const lst = [
         {
             'vopros': `Может ли измениться стоимость работ в процессе ремонта?`,
@@ -45,7 +45,7 @@ const Poleznoe = () => {
                     <Image src={'img/phone.svg'} unoptimized width={20} height={20} sizes='100' className={css.phoneImg} />
                     <span className={css.BigFaq}>Остались вопросы?</span>
                     <span className={css.MiniFaq}>Мы свяжемся с вами в ближайшее время. Наши специалисты всегда рады помочь!</span>
-                    <button className={css.btn}>Оставить заявку</button>
+                    <button className={css.btn} onClick={()=>setModal(true)}>Оставить заявку</button>
                 </div>
 
             </div>

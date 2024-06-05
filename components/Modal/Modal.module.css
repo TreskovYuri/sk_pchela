@@ -1,0 +1,173 @@
+.container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.625);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+.errorText{
+    color: red;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: .6vw;
+}
+.modalWind{
+    padding: 2vw 3vw;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    font-size: 1.3vw;
+    color:var(--black);
+}
+.input{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    text-align: center;
+    margin-top: 1vw;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: .8vw;
+    color: black;
+}
+.input:focus{
+    outline: none; /* Убираем контур при фокусе */
+    border: none; /* Убираем границу при фокусе */
+    border-bottom: 1px solid gray;
+}
+
+
+
+.btn{
+    margin-top: 1vw;
+    background-color: var(--color);
+    padding: .5vw 0;
+    width: 80%;
+    border: none;
+    border-radius: .2vw;
+    color: white;
+    font-size: 0.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover{
+    background-color: var(--color-hover);
+}
+.checkContainer{
+    width: 90%;
+    margin-top: 1vw;
+}
+@media (max-width:768px) {
+    .btn{
+        padding: 1vh 0;
+        border-radius: 1vw;
+        font-size:3vw;
+    }
+}
+
+
+@media (max-width:768px) {
+    .errorText{
+        margin-top: 2vh;
+        font-size: 2.9vw;
+    }
+    .header{
+        font-size: 5vw;
+    }
+    .checkContainer{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+    .modalWind{
+        width: 90%;
+        box-sizing: border-box;
+        padding: 5vh 3vh 3vh 3vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input{
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 80%;
+        text-align: center;
+        margin-top: 2vh;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 4vw;
+        color: black;
+    }
+    .input:focus{
+        outline: none; /* Убираем контур при фокусе */
+        border: none; /* Убираем границу при фокусе */
+        border-bottom: 1px solid gray;
+    }
+    
+    
+    
+    .button{
+        background-color: #31D385;
+        color:white;
+        font-family: var(--font-family);
+        font-weight: 700;
+        border: none;
+        border-bottom: .4vw solid #007F42;
+        border-right: .1vw solid #007F42;
+        border-left: .1vw solid #007F42;
+    
+        padding: 1vh 5vh;
+        border-radius: 5vw;
+        font-size:3vw;
+        margin-top: 5vh;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    .button:hover{
+        transform: scale(102%);
+        border-bottom: .4vw solid #01a656;
+        border-right: .1vw solid #01a656;
+        border-left: .1vw solid #01a656;
+    }
+    .privateContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 3vh;
+        gap: 1vw;
+    }
+    .privateContainer span{
+        font-family: var(--font-family);
+        color: black;
+        font-size: 2.5vw;
+    }
+    .link{
+        font-family: var(--font-family);
+        color: black;
+    }
+    .checkbox{
+        width: 2.1vw;
+        height: 2.1vw;
+        border-radius: .1vw;
+        border:1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .mark{
+        width: 80%;
+    }
+}

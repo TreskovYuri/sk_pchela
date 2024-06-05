@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 
-const Header = () => {
+const Header = ({setModalForm}) => {
   const [modal, setModal] = useState(false)
   return (
     <motion.section transition={{ duration: .3, ease: 'easeOut', delay: 3 }} className={css.container} >
@@ -31,7 +31,7 @@ const Header = () => {
           <span className={css.labelNumber}>Ответим с 9:00-22:00</span>
         </div>
         <div className={css.buttonIconsContainer}>
-          <div className={css.button}>Заказать звонок</div>
+          <div className={css.button} onClick={()=>setModalForm(true)}>Заказать звонок</div>
           <div className={css.iconsBlock}>
             <Image src='img/vk_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' alt='Иконка социальной сети'/>
             <Image src='img/tg_icon.svg' className={css.icon} unoptimized width={50} height={50} sizes='100' alt='Иконка социальной сети'/>
