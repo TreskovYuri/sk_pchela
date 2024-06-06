@@ -32,9 +32,87 @@
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
 }
-.squareInput{
+.squareInput {
     width: 80%;
-}
+    -webkit-appearance: none; /* Убираем стандартный стиль для Webkit-браузеров */
+    appearance: none; /* Убираем стандартный стиль для всех браузеров */
+  }
+  
+  /* Стиль для трека ползунка для Webkit-браузеров */
+  .squareInput::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: var(--color-enable); /* Цвет трека */
+    border-radius: 5px;
+    /* border: 1px solid #010101; */
+  }
+  
+  .squareInput::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color); /* Цвет ползунка */
+    cursor: pointer;
+    margin-top: -4px; /* Смещение ползунка, чтобы он был по центру трека */
+  }
+  
+  /* Стиль для трека ползунка для Firefox */
+  .squareInput::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: var(--color-enable); /* Цвет трека */
+    border-radius: 5px;
+  }
+  
+  .squareInput::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color); /* Цвет ползунка */
+    cursor: pointer;
+  }
+  
+  /* Стиль для трека ползунка для IE */
+  .squareInput::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  .squareInput::-ms-fill-lower {
+    background: var(--color-enable); /* Цвет трека */
+    border-radius: 5px;
+  }
+  
+  .squareInput::-ms-fill-upper {
+    background: var(--color-enable); /* Цвет трека */
+    border-radius: 5px;
+  }
+  
+  .squareInput::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color); /* Цвет ползунка */
+    cursor: pointer;
+    margin-top: 0px; /* Смещение ползунка */
+  }
+  
+  /* Убираем фокусное обрамление */
+  .squareInput:focus {
+    outline: none;
+  }
+  
+  .squareInput:focus::-webkit-slider-runnable-track {
+    background: var(--color-enable); /* Цвет трека при фокусе */
+  }
 .check2Container{
     display: flex;
     flex-direction: column;

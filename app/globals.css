@@ -4,10 +4,10 @@
   box-sizing: border-box;
 
   /* Цвета */
-  --color:#0374DF;
-  --color-hover:#0065c3;
-  --color-enable:#cfe8ff;
-  --color-enable-hover:#c2e0fd;
+  --color:#fc7b11;
+  --color-hover:#e65f05;
+  --color-enable:#ffdaaf;
+  --color-enable-hover:#fcce99;
   --black:#2d2d2d;
 }
 *::-webkit-scrollbar {

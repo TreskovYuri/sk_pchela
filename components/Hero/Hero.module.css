@@ -32,6 +32,8 @@
     color: var(--color);
     z-index: 1;
     font-size: 1vw;
+    display: flex;
+    gap: .5vw;
 }
 .header{
     color: black;
