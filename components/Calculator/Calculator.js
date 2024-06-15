@@ -14,6 +14,10 @@ const Calculator = ({ setModal }) => {
   const [checkNewOld, setCHeckNewOld] = useState(false);
   const [square, setSquare] = useState(10);
   const [policy, setPolicy] = useState(true);
+  const [checkDopSale, setCheckDopSale] = useState(false)
+  const [checkDisignProject, setCheckDisignProject] = useState(false)
+  const [checkPodbor, setCheckPodbor] = useState(false)
+  const [checkSpecific, setCheckSpecific] = useState(false)
 
   return (
     <div className={css.container}>
@@ -66,23 +70,23 @@ const Calculator = ({ setModal }) => {
           <span className={css.label}>Дополнительно:</span>
           <div className={css.check2Container}>
             <ChechBox
-              check={!checkNewOld}
-              setCheck={() => setCHeckNewOld(!checkNewOld)}
+              check={checkDopSale}
+              setCheck={() => setCheckDopSale(!checkDopSale)}
               text={"Дополнительная скидка 10%"}
             />
             <ChechBox
-              check={!checkNewOld}
-              setCheck={() => setCHeckNewOld(!checkNewOld)}
+              check={checkDisignProject}
+              setCheck={() => setCheckDisignProject(!checkDisignProject)}
               text={"Дизайн-проект"}
             />
             <ChechBox
-              check={!checkNewOld}
-              setCheck={() => setCHeckNewOld(!checkNewOld)}
+              check={checkPodbor}
+              setCheck={() => setCheckPodbor(!checkPodbor)}
               text={"Подбор чистовых материалов (бесплатно)"}
             />
             <ChechBox
-              check={!checkNewOld}
-              setCheck={() => setCHeckNewOld(!checkNewOld)}
+              check={checkSpecific}
+              setCheck={() => setCheckSpecific(!checkSpecific)}
               text={"Спецификация на черновой материал (бесплатно)"}
             />
           </div>

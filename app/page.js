@@ -42,7 +42,7 @@ export default function Home() {
     <Poligon/>
     <Smeta/>
     <Sclad/>
-    <Sertificats/>
+    {/* <Sertificats/> */}
     <Partners/>
     <Otzivi/>
     <Poleznoe setModal={setModal}/>

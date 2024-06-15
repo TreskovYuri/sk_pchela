@@ -68,7 +68,7 @@ const click = async() => {
                     <button className={css.btn} onClick={click}>Заказать</button>
                 </div>
                 <div className={css.imgContainer}>
-                    <Image src={'img/smeta.webp'} width={200} height={200} unoptimized sizes='100' className={css.img}/>
+                    <Image src={'img/smeta.png'} width={200} height={200} unoptimized sizes='100' className={css.img}/>
                 </div>
             </div>
         </div>
