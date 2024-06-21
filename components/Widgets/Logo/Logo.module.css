@@ -1,15 +1,26 @@
 .container{
     width: 1.7vw;
     height: 1.7vw;
-    background-image: url('./img/logo.jpeg');
+    transition: all .3s;
+    cursor: pointer;
     background-size: cover; /* Масштабирование изображения чтобы покрыть весь элемент */
     background-repeat: no-repeat; /* Запрет повторения изображения */
     background-position: center; /* Центрирование изображения */
-    transition: all .3s;
-    cursor: pointer;
 }
 .container:hover{
     background-image: url('./img/logo-hover.jpeg');
+}
+.black{
+    background-image: url('./img/logo_black.png');
+}
+.black:hover{
+    background-image: url('./img/logo_black_hover.png');
+}
+.white{
+    background-image: url('./img/logo_white.png');
+}
+.white:hover{
+    background-image: url('./img/logo_white_hover.png');
 }
 
 @media (max-width:768px) {

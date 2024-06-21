@@ -8,7 +8,7 @@ const Footer = ({setModal}) => {
   return (
     <div className={css.container}>
       <div className={css.logoContainer}>
-        <Logo/>
+        <Logo type="white"/>
         <div className={css.textContainer}>
           <span className={css.text1}>Пчела</span>
           <span className={css.text2}>Строительная компания</span>

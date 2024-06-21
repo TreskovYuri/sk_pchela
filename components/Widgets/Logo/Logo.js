@@ -1,8 +1,8 @@
 import css from './Logo.module.css'
 
-const Logo = () => {
+const Logo = ({type='black'}) => {
   return (
-    <div className={css.container}></div>
+    <div className={`${css.container} ${type == 'black' ? css.black : css.white}`}></div>
   )
 }
 
