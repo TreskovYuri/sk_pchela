@@ -1,0 +1,20 @@
+.container{
+    width: 1.7vw;
+    height: 1.7vw;
+    background-image: url('./img/logo.jpeg');
+    background-size: cover; /* Масштабирование изображения чтобы покрыть весь элемент */
+    background-repeat: no-repeat; /* Запрет повторения изображения */
+    background-position: center; /* Центрирование изображения */
+    transition: all .3s;
+    cursor: pointer;
+}
+.container:hover{
+    background-image: url('./img/logo-hover.jpeg');
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 5vh;
+        height: 5vh;
+    }
+}
