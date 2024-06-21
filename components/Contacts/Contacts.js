@@ -26,7 +26,6 @@ const Contacts = ({setModal}) => {
 
     },[])
 
-
     return (
         <div className={css.container} id='contacts'>
             <div className={css.modalWind}>
@@ -46,11 +45,11 @@ const Contacts = ({setModal}) => {
                 <div className={css.mapContainer}>
                     <YMaps>
 
-                        <Map width={width} height={height} defaultState={{ center: [55.118977, 61.646347], zoom: 9 }}>
-                            <Placemark defaultGeometry={[55.118977, 61.646347]} />
+                        <Map width={width} height={height} defaultState={{ center: [55.703992, 37.625909], zoom: 9 }}>
+                            <Placemark defaultGeometry={[55.703992, 37.625909]} />
                         </Map>
                     </YMaps>
-                    <span className={css.ogrn}>ООО «ГК Феникс» – ремонтно-строительная компания ИНН: 9718187577, ОГРН: 1227700116390</span>
+                    <span className={css.ogrn}>ООО «СК Пчела» – ремонтно-строительная компания ИНН: 9718187577, ОГРН: 1227700116390</span>
                     <span className={css.ogrn}>Политика конфиденциальности</span>
                 </div>
             </div>
