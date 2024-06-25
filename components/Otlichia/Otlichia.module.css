@@ -66,6 +66,31 @@
     font-size: .7vw;
     color:var(--black);
 }
+@media (max-width:1680px) {
+    .container{
+        padding: 6vw 10vw; 
+    }
+    .header{
+        font-size: 2.2vw;
+    }
+    .blockHeader{
+        font-size: 1.3vw;
+    }
+    .card{
+        gap: .7vw;
+        width: 80%;
+        margin-top: 0.6vw;
+    }
+    .img{
+        width: 2.4vw;
+    }
+    .cardName{
+        font-size: 1vw;
+    }
+    .cardDescription{
+        font-size: .9vw;
+    } 
+}
 @media (max-width:768px) {
     .container{
         display: flex;

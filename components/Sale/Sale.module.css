@@ -80,7 +80,30 @@
 .saleButton1:hover{
     background-color: var(--color-hover);
 }
+@media (max-width:1680px) {
+    .saleBox{
+        width: 20vw;
+    }
+    .box1{
+        height: 11vw;
+    }
 
+    .saleHeader{
+        font-size: 2.5vw;
+    }
+    .salePersent{
+        font-size: 2.7vw;
+    }
+    .saleDescr{
+        font-size: .9vw; 
+    }
+    .saleButton{
+        font-size: 1.5vw;
+    }
+    .saleButton1{
+        font-size: .9vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         height: auto;

@@ -93,7 +93,28 @@
     width: 50%;
     z-index: 1;
 }
-
+@media (max-width:1680px) {
+    .mapIcon{
+        width: 1.7vw;
+    }
+    .city{
+        font-size: 1.5vw;
+    }
+    .header{
+        font-size: 2.4vw;
+        width: 25vw;
+    }
+    .description{
+        font-size: 1vw;
+        width: 25vw;
+    }
+    .cardName{
+        font-size: .9vw;
+    }
+    .cardDescription{
+        font-size: .7vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         height: auto;

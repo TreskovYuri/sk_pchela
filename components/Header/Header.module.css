@@ -147,7 +147,34 @@
 .icon:hover{
     opacity: .9;
 }
-
+@media (max-width:1680px) {
+    .text1{
+        font-size: 1vw;
+    }
+    .text2{
+        font-size: .6vw;
+    }
+    .nav{
+        gap: 1vw;
+    }
+    .Link{
+        font-size: .9vw;
+    }
+    .num{
+        font-size: 1vw;
+    }
+    .labelNumber{
+        font-size: .7vw;
+    }
+    
+    .button{
+        padding: .5vw 2vw;
+        font-size: .9vw;
+    }
+    .icon{
+        height: .9vw;
+    }
+}
 @media (max-width:768px){
     .cityContainer{
         display: flex;

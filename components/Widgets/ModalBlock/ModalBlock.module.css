@@ -58,6 +58,17 @@
 .modalItemActive{
     font-weight: 600;
 }
+@media (max-width:1680px) {
+    .modalTrigger{
+        font-size: 0.8vw;
+    }
+    .triangle{
+        width: .9vw;
+    }
+    .modalItem{
+        font-size: .8vw;
+    }
+}
 @media (max-width:768px) {
     .modalTrigger{
         display: flex;

@@ -97,6 +97,56 @@
     margin-top: 0.5vw;
     width: 90%;
 }
+@media (max-width:1680px) {
+    .container{
+        width: 100%;
+        height: auto;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalWind{
+        width: 60%;
+    }
+    .textContainer{
+        width:60%;
+    }
+    .header{
+        font-size: 2.2vw;
+    }
+    .index{
+        font-size: 1.4vw;
+    }
+    .adress{
+        font-size: 1.6vw;
+
+    }
+    .label{
+        font-size: 1vw;
+    }
+    .smm{
+        font-size: 1vw;
+    }
+    .number{
+        font-size: 2vw;
+    }
+    .time{
+        font-size: 1.3vw;
+    }
+    .oferta{
+        font-size: 0.8vw;
+    }
+    .btn{
+        font-size: 0.9vw;
+    }
+    .mapContainer{
+        width: 40%;
+    }
+    .ogrn{
+        font-size: 0.9vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         width: 100%;

@@ -18,6 +18,26 @@
     cursor: pointer;
     font-size: .6vw;
 }
+@media (max-width:1680px) {
+    .checkRow{
+        gap: .4vw;
+    }
+    .text{
+        font-size: 0.8vw;
+    }
+    .checkBox{
+        width: .9vw;
+        height: .9vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color);
+        border-radius: .1vw;
+        border: 1px solid gray;
+        cursor: pointer;
+        font-size: .6vw;
+    }
+}
 @media (max-width:768px) {
     .checkRow{
         display: flex;

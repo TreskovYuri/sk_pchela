@@ -124,6 +124,48 @@
 .icon:hover{
     transform: scale(103%);
 }
+@media (max-width:1680px) {
+    .container{
+        height: 10vw;
+        padding: 0 10vw;
+    }
+    .logoContainer{
+        gap: 1vw;
+    }
+    .text1{
+        font-size: 1.3vw;
+    }
+    .text2{
+        font-size: .9vw;
+    }
+
+    .logo{
+        height:3vw;
+    }
+    .Link{
+        font-size: .9vw;
+    }
+    .number{
+        font-size: 1.1vw;
+    }
+    .time{
+        font-size: .9vw;
+    }
+    .btn{
+        font-size: 1vw;
+    }
+
+    .iconHeader{
+        font-size: .9vw;
+    }
+    .iconBlock{
+        gap: .4vw;
+        margin-top: 0.7vw;
+    }
+    .icon{
+        width: 1.5vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         width: 100%;

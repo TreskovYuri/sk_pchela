@@ -113,6 +113,37 @@
     font-size: .8vw;
     font-weight: 600;
 }
+@media (max-width:1680px) {
+    .header{
+        font-size: 2.2vw;
+    }
+    .buttonContainer{
+        height: 2.2vw;
+        margin-top: 3vw;
+    }
+    .button{
+        width: 11vw;
+        font-size: .9vw;
+    }
+    .slider{
+        margin-top: 3vw;
+    }
+    .card{
+       width: 25vw;
+    }
+    .footer{
+        font-size: 1.3vw;
+    }
+    .cardName{
+        font-size: 1.3vw;
+    }
+    .cardLabel{
+        font-size: .9vw;
+    }
+    .cardPrice{
+        font-size: 1.2vw;
+    }
+}
 @media (max-width:768px) {
     .containter{
         display: flex;

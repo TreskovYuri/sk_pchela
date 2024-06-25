@@ -105,6 +105,47 @@
 .btn:hover{
     background-color: var(--color-hover);
 }
+@media (max-width:1680px) {
+    .header{
+        font-size: 2.2vw;
+    }
+    .header1{
+        font-size: 1vw;
+    }
+    .block{
+        gap: .6vw;
+    }
+    .inputContainer{
+        width: 35%;
+    }
+    .input{
+        margin-top: .7vw;
+        font-size: .9vw;
+    }
+    .area{
+        height: 6vw;
+        font-size: 1vw;
+    }
+    .chechContainer{
+        margin-top: 1vw;
+        gap: .6vw;
+    }
+    .checkBox{
+        width: 1.3vw;
+        height: 1.3vw;
+        font-size: .9vw;
+    }
+    .checkDescr{
+        font-size: .8vw;
+        width: 100%;
+    }
+    .link{
+        font-size: .8vw;
+    }
+    .btn{
+        font-size: 0.9vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         display: flex;

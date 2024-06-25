@@ -212,6 +212,85 @@
     height: 3vw;
     width: auto;
 }
+@media (max-width:1680px) {
+    .container{
+        padding: 5vw 10vw;
+    }
+    .container{
+        margin-top: 11vh;
+    }
+    .header{
+
+        font-size: 2.2vw;
+    }
+    .header1{
+        font-size: 1vw;
+    }
+    .button{
+        width: 10vw;
+        font-size: .9vw;
+    }
+
+    .card{
+        width: 20vw;
+        min-height: 80vh;
+    }
+    .cardName{
+        font-size: 1.4vw;
+    }
+    .descriptionContainer{
+        gap: .5vw;
+        padding: .9vw;
+        margin: 1vw .5vw;
+    
+    }
+    .faq{
+        height: 1.3vw;
+        width: 1.3vw;
+        font-size: 1vw; 
+    }
+    .description{
+        height: 2.2vw;
+        font-size: .7vw;
+    }
+    .priceContaiener{
+        height: 5vw;
+    }
+    .salePrice{
+        font-size: .9vw;
+    }
+    .price{
+        font-size: 1.3vw;
+    }
+    .disDescr{
+        font-size: .9vw;
+    }
+    .disDescr1{
+        font-size: 1.1vw;
+    }
+    .disDescr1 span{
+        font-size: 1.4vw;
+    }
+
+    .modalTriggername{
+        font-size: .9vw;
+    }
+    .modalTriggerIcon{
+        font-size: 1.5vw;
+    }
+    .workItem{
+        font-size: .8vw;
+    }
+    .cardButton{
+        bottom: 1vw;
+        width: 100%;
+        left: 0;
+        font-size: 0.9vw;
+    }
+    .hit{
+        height: 4vw;
+    } 
+}
 @media (max-width:768px) {
     .container{
         margin-top: 9vh;

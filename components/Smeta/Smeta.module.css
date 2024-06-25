@@ -97,6 +97,39 @@
     width: 100%;
     height: auto;
 }
+@media (max-width:1680px) {
+    .modalWind{
+        width: 70%;
+    }
+    .textContainer{
+        padding: 6vw 2vw;
+    }
+    .header{
+        font-size: 2.2vw;
+    }
+    .header1{
+        font-size: .9vw;
+        border-radius: .4vw;
+    }
+    .inputContainer{
+        margin-top: 1.4vw;
+    }
+    .input{
+        font-size: 1vw;
+    }
+    .checkBox{
+        width: 1.3vw;
+        height: 1.3vw;
+        font-size: .9vw;
+    }
+    .checkDescr{
+        font-size: .9vw;
+    }
+    
+    .btn{
+        font-size: 0.9vw;
+    }
+}
 @media (max-width:768px) {
     .container{
         width: 100%;
